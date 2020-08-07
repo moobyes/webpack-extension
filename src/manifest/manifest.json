@@ -1,8 +1,8 @@
 {
-  "name": "齐天-业主版",
-  "version": "3.0",
+  "name": "Chrome 插件",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "description": "齐天-业主版",
+  "description": "Chrome 插件模板",
   "icons": {
     "16": "static/logoS.png",
     "48": "static/logoS.png",
@@ -10,36 +10,36 @@
   },
   "browser_action": {
     "default_icon": "static/logoS.png",
-    "default_title": "齐天-业主版",
+    "default_title": "Chrome 插件",
     "default_popup": "popup.html"
   },
-  "homepage_url": "https://www.oyohotels.cn/",
+  "homepage_url": "",
   "content_scripts": [{
       "js": [
-        "meituan.js"
+        "**.js"
       ],
       "matches": [
-        "*://eb.meituan.com/*",
-        "*://ebooking.meituan.com/*"
+        "**",
+        "***"
       ],
       "run_at": "document_idle"
     },
     {
       "js": [
-        "ctrip.js"
+        "**"
 
       ],
       "matches": [
-        "*://ebooking.ctrip.com/*"
+        "**"
       ],
       "run_at": "document_idle"
     },
     {
       "js": [
-        "fliggy.js"
+        "**"
       ],
       "matches": [
-        "*://ebooking.fliggy.com/*"
+        "**"
       ],
       "run_at": "document_idle"
     }
